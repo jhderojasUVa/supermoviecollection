@@ -46,6 +46,8 @@ As a typical quickstart Angular app, there is several ways to run it.
 
 For testing pruposes it will be nice to take the first option.
 
+There is some "vulnerability problems". It means that some of the dependencies are old and have vulnerabilities. I have fixed the most important ones but not all. I'm not sure if this is part of the test or not (really). So, the best way it's not to touch it but say it.
+
 ## Prerequisites
 
 Node.js and npm are essential to Angular development.
