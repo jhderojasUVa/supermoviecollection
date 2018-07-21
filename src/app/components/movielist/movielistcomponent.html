@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- form -->
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Search movie <small><a class="seeAll" (click)="showAll()">[{{ seeAllText }}]</a></small></h2>
+      <div class="moviesearch">
+        <div class="col">
+          <input type="text" #moviesearch name="moviesearch" (keyup)="write(moviesearch.value)" placeholder="Search by title">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- result -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="moviesearchresult" *ngIf="hasresults">
+        <div class="movie" *ngFor="let movie of moviesearchresult; let i = index">
+          <a [routerLink]="['/detail', movie.id, movie.key]">{{ movie.name }}</a> <span class="genre" *ngFor="let genre of movie.genres">#{{ genre }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

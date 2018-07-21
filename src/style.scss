@@ -1,0 +1,19 @@
+// General styles of the web app
+
+// Font import (from Google)
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto');
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: darken(blue, 30);
+}
+
+h1.headline {
+  color: white;
+}
+
+a:hover {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}

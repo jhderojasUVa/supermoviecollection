@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row" style="margin-bottom: 1.5em;">
+    <div class="col-md-12 text-center">
+      <h2><span>Movie details</span> <a routerLink="/" class="return">[return]</a></h2>
+    </div>
+  </div>
+  <div class="row align-center justify-content-md-center" *ngFor="let thismovie of movie; let i = index">
+    <div class="col-md-2">
+      <img src="/assets/images/movie-covers/{{ thismovie.img }}" alt="{{ thismovie.name }}" class="img-fluid img-cover"/>
+    </div>
+    <div class="col-md-4">
+      <h3>{{ thismovie.name }}</h3>
+      <h4>key <small>{{ thismovie.key }}</small></h4>
+      <p>{{ thismovie.description }}</p>
+      <p class="length">Length: {{ thismovie.length }}</p>
+      <div class="rated">
+        <h4>Rated</h4>
+        <p>{{ thismovie.rate }}</p>
+      </div>
+      <p class="genres"><strong>Genres</strong>: <span class="genre" *ngFor="let genre of thismovie.genres">#{{ genre }} </span></p>
+    </div>
+  </div>
+</div>

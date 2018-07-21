@@ -1,0 +1,51 @@
+/* MovieListComponent SCSS (styles) */
+
+h2 {
+  color: white;
+  margin: 0.5em 0;
+}
+
+input[type='text'] {
+  width: 100%;
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+a.seeAll {
+  cursor: pointer;
+  font-size: 0.5em;
+}
+
+a.seeAll:hover {
+  text-decoration: underline;
+}
+
+.moviesearchresult {
+  margin: 1em;
+  color: white;
+}
+
+.moviesearchresult ul li {
+  list-style-type: none;
+  margin: 1em;
+  display: inline-block;
+}
+
+.moviesearchresult .card {
+  display: inline-block;
+  color: black;
+  margin: 1em;
+}
+
+.moviesearchresult .moviePreview {
+  width: 250px;
+}
+
+.moviesearchresult .moviePreview img {
+  width: 100px;
+  text-align: center;
+}
+
+.moviesearchresult .moviePreview .genre {
+  font-size: 0.8em;
+}

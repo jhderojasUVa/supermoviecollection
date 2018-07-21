@@ -1,0 +1,46 @@
+/* Styles of moviedetalcomponent */
+
+h2, h3, h4 {
+  color: white;
+}
+
+h2 span {
+  border-bottom: 1px dotted white;
+}
+
+.return {
+  font-size: 0.7em;
+}
+
+p {
+  color: #888;
+}
+
+p.length {
+  color: #00d8b5;
+}
+
+.rated {
+  margin: 1em;
+  padding: 0.5em 2em;
+  border: 1px solid blue;
+  border-radius: 4px;
+  color: #05d8c5;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rated p {
+  font-size: 4em;
+}
+
+.img-cover {
+  object-fit: cover;
+}
+
+.genres {
+  margin-top: 1.5em;
+  font-size: 0.7em;
+  color: #555;
+}
