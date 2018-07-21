@@ -10,6 +10,8 @@ Based on Angular and Bootstrap, no Redux it's needed thanks that there's no Rest
 
 Bootstrap is used for responsive but it's added some custom css to be more like a videoclub style. That means that the app it's similar like the old fashion videoclubs app with their blue background and style. I think it's the best style for this :)
 
+Remember that the solution is not unique. Everything can be done in several ways.
+
 ## Components
 
 There is only two components after the main one:
@@ -28,7 +30,7 @@ The usual elements like the title of the app, bootstrap (from CDN) and so it's o
 
 ## Model
 
-Inside the model directory it's the faux data (model.mock-data) and the definitions of the genres (movie.model).
+Inside the model directory it's the faux data (model.mock-data) and the definitions of the genres (movie.model). The model can be inserted as a provider but I haven't done it. Inserting it as a provider ensures that the model is the same for all the components as a singleton. It's other way.
 
 ## Assets
 
